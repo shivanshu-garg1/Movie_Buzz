@@ -24,6 +24,7 @@ export default function Home() {
  
   return (
     <>
+    <title>MovieBuzz | Home</title>
      <div className="container mx-auto px-4 py-8">
       <MovieSlider movies={movies.slice(0, 5)} />
       <MovieList movies={movies} />

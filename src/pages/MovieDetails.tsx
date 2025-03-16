@@ -37,7 +37,10 @@ export default function MovieDetails() {
   }
 
   return (
+    <>
+     <title>MovieBuzz | Details</title>
     <div className="max-w-3xl mx-auto p-6 text-black">
+
       <img src={movie.poster} alt={movie.title} className="w-full h-80 object-cover rounded-md" />
       <h2 className="text-3xl font-bold mt-4">
         {movie.title} ({movie.year})
@@ -47,5 +50,6 @@ export default function MovieDetails() {
         <strong>Genres:</strong> {movie.genre.join(", ")}
       </p>
     </div>
+    </>
   );
 }
