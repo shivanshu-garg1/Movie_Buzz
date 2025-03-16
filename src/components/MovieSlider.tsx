@@ -1,8 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
+import 'swiper/swiper-bundle.css';
+
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 
 type MovieSliderProps = {
@@ -29,7 +27,7 @@ export default function MovieSlider({ movies }: MovieSliderProps) {
       >
         {movies.map((movie, index) => (
           <SwiperSlide key={index} className="relative">
-            {/* Background Image */}
+            
             <div className="relative w-full h-96">
               <img
                 src={movie.poster}
